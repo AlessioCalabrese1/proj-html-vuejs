@@ -1,5 +1,5 @@
 <template>
-  <header class="py-4">
+  <header class="py-5">
     <nav class="d-flex justify-content-between px-3">
         <div class="logo-container">
             <img src="../assets/img/logo-img-01.png" alt="logo" class="img-fluid">
@@ -54,7 +54,7 @@ header{
     top: 0;
     left: 0;
     z-index: 5;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0);
     width: 100%;
 }
 
@@ -69,7 +69,7 @@ ul{
     text-align: end;
     li{
         display: inline-block;
-        width: 120px;
+        width: 100px;
         a{
             text-decoration: none;
             text-transform: uppercase;
