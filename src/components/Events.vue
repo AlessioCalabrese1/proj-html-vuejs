@@ -1,12 +1,15 @@
 <template>
   <section>
     <div class="events-list">
-        <div class="events-container">
+        <div>
+            <div class="events-container">
             <h3 class="m-0">Upcoming Events</h3>
             <EventsCard v-for="(event, index) in events" 
             :key="index"
             :event="event" />
         </div>
+        </div>
+        
     </div>
   </section>
 </template>
@@ -57,6 +60,10 @@ section{
 }
 
 .events-list{
+    width: 90%;
+    margin: 0 auto;
+}
+.events-list > div{
     width: 70%;
     margin: 0 auto;
 }
