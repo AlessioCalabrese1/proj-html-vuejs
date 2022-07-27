@@ -148,7 +148,7 @@ export default {
     font-size: 14px;
 }
 
-.carousel_item {
+/* .carousel_item {
     position: absolute;
     top: 0;
     left: 0;
@@ -210,5 +210,5 @@ export default {
     to {
         transform: translateX(+100%);
     }
-}
+} */
 </style>

@@ -1,13 +1,21 @@
 <template>
     <section>
+        <div>
+            <img src="" alt="">
+        </div>
         <StaffWorker v-for="(worker, index) in workers" 
         :key="index"
         :worker="worker"
         :index = "index"
         :visibleItem="visibleItem"/>
-        <div class="btn-container">
-            <button type="button" class="btn btn-primary" @click="goLeft()">Left</button>
-            <button type="button" class="btn btn-primary" @click="goRight()">Right</button>
+        <div class="btn-container d-flex">
+            <div @click="goLeft()">
+                <i class="fa-solid fa-arrow-left-long"></i>
+            </div>
+
+            <div @click="goRight()">
+                <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
         </div>
     </section>
 </template>
@@ -74,5 +82,18 @@ export default {
     section{
         width: $widthElement;
         margin: 0 auto;
+    }
+
+    .btn-container{
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        top: -54px;
+        left: 0;
+        div{
+            background-color: $textColorHover;
+            padding: 15px;
+            color: white;
+        }
     }
 </style>
