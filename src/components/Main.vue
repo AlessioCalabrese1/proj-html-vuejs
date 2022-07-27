@@ -6,6 +6,7 @@
     <Events />
     <Stats />
     <News />
+    <Testimonials />
 </main>
 </template>
 
@@ -16,8 +17,9 @@ import Staff from './Staff.vue';
 import Events from './Events.vue';
 import Stats from './Stats.vue';
 import News from './News.vue';
+import Testimonials from './Testimonials.vue';
 export default {
-    components: { MainShowcase, Specialties, Staff, Events, Stats, News }
+    components: { MainShowcase, Specialties, Staff, Events, Stats, News, Testimonials }
 }
 </script>
 

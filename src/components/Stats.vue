@@ -58,6 +58,10 @@ export default {
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
 
+section{
+    background-color: white;
+}
+
 section>div {
     width: 90%;
     margin: 0 auto;

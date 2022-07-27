@@ -5,7 +5,7 @@
         <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, aperiam!</p>
         <div class="line mb-5"></div>
 
-        <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="container-fluid d-flex justify-content-between align-items-center p-0">
             <div>
                 <i class="fa-solid fa-arrow-left-long"></i>
             </div>
@@ -63,6 +63,10 @@ export default {
 
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+
+section{
+    padding: 85px 0;
+}
 
 section > div{
     width: $widthElement;
