@@ -5,20 +5,16 @@
         <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, aperiam!</p>
         <div class="line mb-5"></div>
 
-        <div class="container-fluid d-flex justify-content-between">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
             <div>
                 <i class="fa-solid fa-arrow-left-long"></i>
             </div>
             
             <div class="events-list">
                 <div class="row">
-                    <div class="col-4 event-card">
-                        <img src="../assets/img/h1-img-03.jpg" alt="" class="img-fluid mb-3">
-                        <p class="date mb-1"><i class="fa-regular fa-clock"></i>May, 5 2019 <i class="fa-regular fa-user"></i>Amanda Doe</p>
-                        <p class="title mb-2">Next Investment</p>
-                        <p class="info mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...</p>
-                        <div class="more">Read More</div>
-                    </div>
+                    <NewsCard v-for="(news, index) in newsList" 
+                    :key="index"
+                    :news="news" />
                 </div>
             </div>
 
@@ -31,8 +27,37 @@
 </template>
 
 <script>
+import NewsCard from './NewsCard.vue';
 export default {
+    data: function(){
+        return{
+            newsList:[
+                {
+                    coverImage: "h1-img-03.jpg",
+                    publicationDate: "May, 5 2019",
+                    author: "Amanda Doe",
+                    title: "Next Investment",
+                    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...",
+                },
+                {
+                    coverImage: "h1-img-02.jpg",
+                    publicationDate: "May, 5 2019",
+                    author: "Amanda Doe",
+                    title: "Next Investment",
+                    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...",
+                },
+                {
+                    coverImage: "h1-blog-img-03.jpg",
+                    publicationDate: "May, 5 2019",
+                    author: "Amanda Doe",
+                    title: "Next Investment",
+                    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...",
+                },
+            ]
+        }
+    },
 
+    components: { NewsCard }
 }
 </script>
 
