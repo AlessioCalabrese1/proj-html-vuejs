@@ -8,7 +8,7 @@
             <div class="col-3 text-center" v-for="(specialtie, index) in specialties" :key="index">
                 <img :src="require(`../assets/svg/${specialtie.img}`)" alt="img">
                 <p class="title">{{ specialtie.title }}</p>
-                <p>{{ specialtie.info }}</p>
+                <p class="info">{{ specialtie.info }}</p>
             </div>
         </div>
     </div>
@@ -54,6 +54,9 @@ section{
     background-color: white;
     margin: 0 auto;
     padding: 50px 0;
+    position: relative;
+    top: -70px;
+    left: 0;
 }
 
 span{
@@ -71,5 +74,13 @@ p{
 .specialties-container{
     margin: 0 auto;
     width: 70%;
+}
+.title{
+    font-weight: bold;
+    color: black;
+    padding-top: 15px;
+}
+.info{
+    font-weight: 300;
 }
 </style>
