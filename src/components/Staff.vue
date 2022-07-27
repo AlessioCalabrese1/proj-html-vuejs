@@ -1,26 +1,70 @@
 <template>
     <section>
-        <div class="staff-container d-flex">
-            <div class="showcase">
-                <img src="../assets/img/h1-blog-img-04.jpg" alt="img" class="img-fluid">
-            </div>
-
-            <div class="staff-info">
-                <h2>Jason Bickford</h2>
-                <p class="subtitle">Founder and Executive Director</p>
-                <div class="line"></div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sint repellat aperiam doloribus, facilis veniam, fugiat perferendis quod iure dolorem.</p>
-                <div class="social-icon-container">
-
-                </div>
-            </div>
+        <StaffWorker v-for="(worker, index) in workers" 
+        :key="index"
+        :worker="worker"
+        :index = "index"
+        :visibleItem="visibleItem"/>
+        <div class="btn-container">
+            <button type="button" class="btn btn-primary" @click="goLeft()">Left</button>
+            <button type="button" class="btn btn-primary" @click="goRight()">Right</button>
         </div>
     </section>
 </template>
 
 <script>
+import StaffWorker from "./StaffWorker.vue";
 export default {
+    data: function () {
+        return {
+            workers: [
+                {
+                    associatedImage: "h1-blog-img-04.jpg",
+                    name: "Jason Bickford",
+                    workingPosition: "Founder and Executive Director",
+                    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sint repellat aperiam doloribus, facilis veniam, fugiat perferendis quod iure dolorem.",
+                },
+                {
+                    associatedImage: "h1-blog-img-01.jpg",
+                    name: "Marta Tods",
+                    workingPosition: "Manager",
+                    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sint repellat aperiam doloribus, facilis veniam, fugiat perferendis quod iure dolorem.",
+                },
+                {
+                    associatedImage: "h1-blog-img-02.jpg",
+                    name: "Jhason Tods",
+                    workingPosition: "Marketing",
+                    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sint repellat aperiam doloribus, facilis veniam, fugiat perferendis quod iure dolorem.",
+                },
+                {
+                    associatedImage: "h1-blog-img-03.jpg",
+                    name: "Alessio Calabrese",
+                    workingPosition: "Sales Clerk",
+                    info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae sint repellat aperiam doloribus, facilis veniam, fugiat perferendis quod iure dolorem.",
+                },
+            ],
+            visibleItem: 0,
+        };
+    },
+    methods: {
+        goRight(){
+            if (this.visibleItem == this.workers.length-1) {
+                this.visibleItem = 0;
+            }else{
+                this.visibleItem++;
+            }
+        },
 
+        goLeft(){
+            if (this.visibleItem == 0) {
+                this.visibleItem = this.workers.length-1;
+            }else{
+                this.visibleItem--;
+            }
+        }
+    },
+
+    components: { StaffWorker }
 }
 </script>
 
@@ -30,33 +74,5 @@ export default {
     section{
         width: $widthElement;
         margin: 0 auto;
-    }
-
-    .staff-container{
-        width: 70%;
-        margin: 0 auto;
-        align-items: center;
-    }
-
-    .showcase{
-        width: 65%;
-    }
-
-    .staff-info{
-        width: 60%;
-        position: relative;
-        top: 50%;
-        left: -50px;
-        background-color: white;
-        padding: 70px 50px ;
-    }
-
-    .line{
-        border: 1px solid $textColorHover;
-        width: 10%;
-    }
-
-    .subtitle{
-        font-size: 12px;
     }
 </style>
