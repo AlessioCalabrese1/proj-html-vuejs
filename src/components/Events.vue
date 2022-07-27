@@ -3,35 +3,46 @@
     <div class="events-list">
         <div class="events-container">
             <h3 class="m-0">Upcoming Events</h3>
-            <div class="event-card d-flex">
-                <div class="date text-center me-3">
-                    <p>07</p>
-                    <p class="month">Jan, 2022</p>
-                </div>
-
-                <div class="info">
-                    <p class="type mb-2">Mellbourn Coaching</p>
-                    <p class="mb-1">
-                        <i class="fa-regular fa-clock me-2"></i>
-                        <span>9:00 am - 5:00 pm, Jan 07, 2022</span>
-                    </p>
-                    <p class="mb-2">
-                        <i class="fa-solid fa-location-dot me-2"></i>
-                        <span>Cambridge, MA 02138, USA</span>
-                    </p>
-                    <p class="more">
-                        Read More
-                    </p>
-                </div>
-            </div>
+            <EventsCard v-for="(event, index) in events" 
+            :key="index"
+            :event="event" />
         </div>
     </div>
   </section>
 </template>
 
 <script>
+import EventsCard from './EventsCard.vue';
 export default {
+    data: function(){
+        return{
+            events:[
+                {
+                    day: "07",
+                    date: "Jan, 2022",
+                    type: "Mellbourn Coaching",
+                    time: "9:00 am - 5:00 pm, Jan 07, 2022",
+                    location: "Cambridge, MA 02138, USA",
+                },
+                {
+                    day: "11",
+                    date: "Jan, 2022",
+                    type: "New York Coaching",
+                    time: "9:00 am - 5:00 pm, Jan 11, 2022",
+                    location: "Cambridge, MA 02138, USA",
+                },
+                {
+                    day: "21",
+                    date: "Jan, 2022",
+                    type: "London Coaching",
+                    time: "9:00 am - 5:00 pm, Jan 21, 2022",
+                    location: "Cambridge, MA 02138, USA",
+                },
+            ]
+        }
+    },
 
+    components: { EventsCard }
 }
 </script>
 
@@ -41,6 +52,8 @@ export default {
 section{
     background-image: url(../assets/img/h1-img-09.jpg);
     height: 1100px;
+    display: flex;
+    align-items: center;
 }
 
 .events-list{
@@ -54,45 +67,6 @@ section{
 
 h3{
     padding: 25px 30px;
-}
-
-.event-card{
-    padding: 25px 30px;
-}
-
-.date{
-    width: 60px;
-    height: 50px;
-    background-color: $textColorHover;
-    p{
-        margin: 0;
-        color: white;
-    }
-    .month{
-        font-size: 12px;
-        color: $eventsMainTextColor;
-        font-weight: 100;
-    }
-}
-
-.info{
-    p{
-        margin: 0;
-        font-size: 12px;
-        color: $textInfoColor;
-    }
-    i{
-        color: $textColorHover;
-    }
-    .type{
-        font-weight: bold;
-        font-size: 18px;
-        color: black;
-    }
-    .more{
-        color: black;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+/*     box-shadow: 5px 15px 5px $backgroundColorMain; */
 }
 </style>
