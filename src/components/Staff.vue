@@ -1,8 +1,5 @@
 <template>
     <section>
-        <div>
-            <img src="" alt="">
-        </div>
         <StaffWorker v-for="(worker, index) in workers" 
         :key="index"
         :worker="worker"

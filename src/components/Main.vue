@@ -3,6 +3,7 @@
     <MainShowcase />
     <Specialties />
     <Staff />
+    <Events />
 </main>
 </template>
 
@@ -10,8 +11,9 @@
 import MainShowcase from './MainShowcase.vue';
 import Specialties from './Specialties.vue';
 import Staff from './Staff.vue';
+import Events from './Events.vue';
 export default {
-    components: { MainShowcase, Specialties, Staff }
+    components: { MainShowcase, Specialties, Staff, Events }
 }
 </script>
 
