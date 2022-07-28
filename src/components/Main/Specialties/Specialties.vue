@@ -57,7 +57,7 @@ section{
     width: $widthElement;
     background-color: white;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 80px 0;
     position: relative;
     top: -70px;
     left: 0;

@@ -14,7 +14,7 @@
                         <div class="mainshowcase-title">
                             {{ showcaseItem.title }}<span>.</span>
                         </div>
-                        <div class="mainshowcase-info mb-3">
+                        <div class="mainshowcase-info mb-4">
                             {{ showcaseItem.info }}
                         </div>
 

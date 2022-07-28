@@ -34,6 +34,8 @@ export default {
 
 .event-card {
     padding: 15px;
+    position: relative;
+    z-index: 2;
 }
 .event-card:hover {
     cursor: pointer;

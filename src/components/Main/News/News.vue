@@ -25,7 +25,7 @@
             </div>
         </div>
     </div>
-
+    <img src="../../../assets/svg/svg-4.svg" alt="" class="background-circle">
     <Anchor />
   </section>
 </template>
@@ -141,4 +141,17 @@ p.text-center{
 .hov:hover{
     cursor: pointer;
 }
+
+.anchor{
+    bottom: 50%;
+    right: 20px;
+    transform: translate(-50%, 0);
+}
+
+.background-circle{
+        position: absolute;
+        top: -70px;
+        left: 110px;
+        z-index: 1;
+    }
 </style>

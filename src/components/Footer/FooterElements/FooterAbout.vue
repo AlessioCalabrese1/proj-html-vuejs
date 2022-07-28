@@ -60,5 +60,8 @@ i{
     font-size: 18px;
     margin-right: 8px;
 }
+i:hover{
+    color: $textColorHover;
+}
 
 </style>

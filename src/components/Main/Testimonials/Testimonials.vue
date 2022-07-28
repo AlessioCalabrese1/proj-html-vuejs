@@ -75,7 +75,7 @@ export default {
 @import "../../../styles/variables.scss";
 
 section{
-    background-color: #181515;
+    background-color: #1e1c1c;
     padding: 150px 0;
     position: relative;
 }
@@ -102,6 +102,7 @@ section > div {
     z-index: 1;
     font-family: 'Ibarra Real Nova', serif;
     font-weight: bold;
+    color: #181515;
 }
 
 .testimonials-container {

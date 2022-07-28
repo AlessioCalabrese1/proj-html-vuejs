@@ -45,6 +45,8 @@ export default {
         margin: 0 auto;
         display: flex;
         align-items: center;
+        position: relative;
+        z-index:2;
     }
 
     .showcase{

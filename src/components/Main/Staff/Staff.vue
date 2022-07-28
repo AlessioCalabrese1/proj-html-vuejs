@@ -15,6 +15,7 @@
             </div>
         </div>
 
+        <img src="../../../assets/svg/svg-4.svg" alt="" class="background-circle">
         <Anchor />
     </section>
 </template>
@@ -105,5 +106,12 @@ export default {
 
     .hov:hover{
         cursor: pointer;
+    }
+
+    .background-circle{
+        position: absolute;
+        top: -70px;
+        right: 60px;
+        z-index: 1;
     }
 </style>

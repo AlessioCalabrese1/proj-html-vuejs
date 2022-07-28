@@ -2,7 +2,7 @@
 <section class="position-relative">
     <img src="../../../assets/img/h1-img-04.jpg" alt="video" class="img-fluid">
     <div><i class="fa-solid fa-play play"></i></div>
-
+    
     <Anchor />
 </section>
   
