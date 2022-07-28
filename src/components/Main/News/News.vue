@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="position-relative">
     <div>
         <h1 class="text-center">Latest News<span>.</span></h1>
         <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, aperiam!</p>
@@ -23,11 +23,14 @@
             </div>
         </div>
     </div>
+
+    <Anchor />
   </section>
 </template>
 
 <script>
 import NewsCard from './NewsCard.vue';
+import Anchor from '../Anchor.vue';
 export default {
     data: function(){
         return{
@@ -57,7 +60,7 @@ export default {
         }
     },
 
-    components: { NewsCard }
+    components: { NewsCard, Anchor }
 }
 </script>
 
@@ -115,5 +118,11 @@ p.text-center{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 12px;
+}
+
+.anchor{
+    right: 20px;
+    bottom: 50%;
+    transform: translate(-50%, 0);
 }
 </style>

@@ -12,37 +12,41 @@
             </div>
         </div>
     </div>
+
+    <Anchor />
   </section>
 </template>
 
 <script>
+import Anchor from '../Anchor.vue'
 export default {
-    data: function(){
-        return{
-            specialties:[
+    data: function () {
+        return {
+            specialties: [
                 {
-                    img:"svg-0.svg",
+                    img: "svg-0.svg",
                     title: "Knowing",
                     info: "Lorem ipsum dolor sit amet, quis consect."
                 },
                 {
-                    img:"svg-1.svg",
+                    img: "svg-1.svg",
                     title: "Selling",
                     info: "Lorem ipsum dolor sit amet, quis consect."
                 },
                 {
-                    img:"svg-2.svg",
+                    img: "svg-2.svg",
                     title: "Learning",
                     info: "Lorem ipsum dolor sit amet, quis consect."
                 },
                 {
-                    img:"svg-3.svg",
+                    img: "svg-3.svg",
                     title: "Contact",
                     info: "Lorem ipsum dolor sit amet, quis consect."
                 }
             ]
-        }
-    }
+        };
+    },
+    components: { Anchor }
 }
 </script>
 
@@ -58,7 +62,6 @@ section{
     top: -70px;
     left: 0;
 }
-
 span{
     color: $textColorHover;
     font-weight: bold;
@@ -82,5 +85,9 @@ p{
 }
 .info{
     font-weight: 300;
+}
+
+.anchor{
+    bottom: -20px;
 }
 </style>

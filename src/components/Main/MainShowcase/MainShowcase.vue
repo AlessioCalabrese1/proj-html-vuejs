@@ -1,5 +1,5 @@
 <template>
-  <section class="position-relative">
+  <section class="position-relative" id="main_element">
     <MainShowcaseItem v-for="(item, index) in showcaseItems" :key="index" 
     :showcaseItem="item" 
     :visibleItem="visibleItem"

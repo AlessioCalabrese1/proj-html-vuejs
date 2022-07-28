@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="position-relative">
         <StaffWorker v-for="(worker, index) in workers" 
         :key="index"
         :worker="worker"
@@ -14,11 +14,14 @@
                 <i class="fa-solid fa-arrow-right-long"></i>
             </div>
         </div>
+
+        <Anchor />
     </section>
 </template>
 
 <script>
 import StaffWorker from "./StaffWorker.vue";
+import Anchor from "../Anchor.vue";
 export default {
     data: function () {
         return {
@@ -69,7 +72,7 @@ export default {
         }
     },
 
-    components: { StaffWorker }
+    components: { StaffWorker, Anchor }
 }
 </script>
 
@@ -79,6 +82,7 @@ export default {
     section{
         width: $widthElement;
         margin: 0 auto;
+        padding: 50px 0;
     }
 
     .btn-container{
@@ -92,5 +96,9 @@ export default {
             padding: 15px;
             color: white;
         }
+    }
+
+    .anchor{
+        bottom: 30px;
     }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="position-relative">
         <div>
             <div class="stats-container">
                 <div class="row">
@@ -44,14 +44,15 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <Anchor />
     </section>
 </template>
 
 <script>
+import Anchor from '../Anchor.vue';
 export default {
-
+    components: { Anchor }
 }
 </script>
 
@@ -145,5 +146,11 @@ section>div {
 .empty-bar-motivation {
     border: 1px solid $eventsMainTextColor;
     width: calc(100% - 83%);
+}
+
+.anchor{
+    bottom: 50%;
+    right: 20px;
+    transform: translate(-50%, 0);
 }
 </style>

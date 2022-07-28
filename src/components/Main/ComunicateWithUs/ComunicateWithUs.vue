@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="position-relative">
     <div>
         <div class="comunicate-container">
             <div class="row align-items-center">
@@ -28,13 +28,16 @@
             </div>
         </div>
     </div>
+
+    <Anchor />
   </section>
 </template>
 
 <script>
 import Maps from './Maps.vue';
+import Anchor from '../Anchor.vue';
 export default {
-    components: { Maps }
+    components: { Maps, Anchor }
 }
 </script>
 
@@ -103,5 +106,10 @@ section > div{
     i {
         color: white;
     }
+}
+
+.anchor{
+    bottom: 97%;
+    right: 20px;
 }
 </style>

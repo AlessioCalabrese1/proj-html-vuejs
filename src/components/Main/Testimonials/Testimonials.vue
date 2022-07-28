@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="position-relative">
         <div class="background-title">Testimonials.</div>
         <div class="structure">
             <div>
@@ -14,11 +14,14 @@
                 <i class="fa-solid fa-arrow-right-long"></i>
             </div>
         </div>
+
+        <Anchor />
     </section>
 </template>
 
 <script>
 import TestimonialCard from './TestimonialCard.vue';
+import Anchor from '../Anchor.vue';
 export default {
     data: function () {
         return {
@@ -33,7 +36,7 @@ export default {
 
     },
 
-    components: { TestimonialCard }
+    components: { TestimonialCard, Anchor }
 }
 </script>
 
@@ -73,5 +76,11 @@ section > div {
 }
 i{
     color: white;
+}
+
+.anchor{
+    right: 20px;
+    bottom: 75%;
+
 }
 </style>
