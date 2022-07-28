@@ -7,6 +7,7 @@
     <Stats />
     <News />
     <Testimonials />
+    <Video />
 </main>
 </template>
 
@@ -18,8 +19,9 @@ import Events from './Events.vue';
 import Stats from './Stats.vue';
 import News from './News.vue';
 import Testimonials from './Testimonials.vue';
+import Video from './Video.vue';
 export default {
-    components: { MainShowcase, Specialties, Staff, Events, Stats, News, Testimonials }
+    components: { MainShowcase, Specialties, Staff, Events, Stats, News, Testimonials, Video }
 }
 </script>
 

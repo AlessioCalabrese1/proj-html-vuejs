@@ -1,6 +1,7 @@
 <template>
     <section>
-        <div>
+        <div class="background-title">Testimonials.</div>
+        <div class="structure">
             <div>
                 <i class="fa-solid fa-arrow-left-long"></i>
             </div>
@@ -37,14 +38,40 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-section>div {
-    width: 90%;
+@import "../styles/variables.scss";
+
+section{
+    background-color: #181515;
+    padding: 80px 0;
+    position: relative;
+}
+
+section > div {
+    width: $widthElement;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.structure{
+    position: relative;
+    z-index: 2;
+}
+
+.background-title{
+    font-size: 300px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 1;
 }
 
 .testimonials-container {
-    width: 50%;
+    width: 40%;
+}
+i{
+    color: white;
 }
 </style>

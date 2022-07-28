@@ -1,12 +1,12 @@
 <template>
   <div>
-    <img :src="require(`../assets/img/${testimonial.img}`)" alt="img">
-    <div>
+    <img :src="require(`../assets/img/${testimonial.img}`)" alt="img" class="mb-3">
+    <div class="name mb-3">
         {{ testimonial.name }}
     </div>
 
-    <div>
-        {{ testimonial.info }}
+    <div class="info mb-3">
+        "{{ testimonial.info }}"
     </div>
   </div>
 </template>
@@ -17,11 +17,22 @@ export default {
         testimonial:{
             type: Object,
             require: true
-        }
+        },
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/variables.scss";
 
+.name{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info{
+    color: $textInfoColor;
+    font-size: 18px;
+}
 </style>
