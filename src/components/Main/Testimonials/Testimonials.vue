@@ -3,15 +3,19 @@
         <div class="background-title">Testimonials.</div>
         <div class="structure">
             <div>
-                <i class="fa-solid fa-arrow-left-long"></i>
+                <i class="fa-solid fa-arrow-left-long" @click="goLeft()"></i>
             </div>
 
             <div class="testimonials-container text-center">
-                <TestimonialCard v-for="(testimonial, index) in testimonials" :key="index" :testimonial="testimonial" />
+                <TestimonialCard v-for="(testimonial, index) in testimonials" 
+                :key="index" 
+                :testimonial="testimonial"
+                :index="index" 
+                :visibleItem="visibleItem"/>
             </div>
 
             <div>
-                <i class="fa-solid fa-arrow-right-long"></i>
+                <i class="fa-solid fa-arrow-right-long" @click="goRight()"></i>
             </div>
         </div>
 
@@ -30,10 +34,37 @@ export default {
                     img: "h3-img-04.png",
                     name: "Cynthia Clark",
                     info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam voluptates sint impedit, labore molestiae minima eius cupiditate fugiat esse repellendus? Ad, consectetur error!"
-                }
-            ]
+                },
+                {
+                    img: "h3-img-07.png",
+                    name: "Cinzia Nunzia",
+                    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam voluptates sint impedit, labore molestiae minima eius cupiditate fugiat esse repellendus? Ad, consectetur error!"
+                },
+                {
+                    img: "h3-img-08.png",
+                    name: "Giovanna Olivetti",
+                    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam voluptates sint impedit, labore molestiae minima eius cupiditate fugiat esse repellendus? Ad, consectetur error!"
+                },
+            ],
+            visibleItem: 0,
         }
+    },
+    methods:{
+        goRight(){
+            if (this.visibleItem == this.testimonials.length-1) {
+                this.visibleItem = 0;
+            }else{
+                this.visibleItem++;
+            }
+        },
 
+        goLeft(){
+            if (this.visibleItem == 0) {
+                this.visibleItem = this.testimonials.length-1;
+            }else{
+                this.visibleItem--;
+            }
+        }
     },
 
     components: { TestimonialCard, Anchor }

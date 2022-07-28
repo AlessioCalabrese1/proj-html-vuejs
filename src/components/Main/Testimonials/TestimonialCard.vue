@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-show="index === visibleItem">
     <img :src="require(`../../../assets/img/${testimonial.img}`)" alt="img" class="mb-3">
     <div class="name mb-3">
         {{ testimonial.name }}
@@ -18,6 +18,14 @@ export default {
             type: Object,
             require: true
         },
+        index:{
+            type: Number,
+            require: true
+        },
+        visibleItem:{
+            type: Number,
+            require: true
+        }
     }
 }
 </script>
