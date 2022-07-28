@@ -1,8 +1,8 @@
 <template>
     <div class="col-6 position-relative">
-        <img src="../assets/img/h1-contact-rev-01.png" alt="maps" class="img-fluid">
+        <img src="../../../assets/img/h1-contact-rev-01.png" alt="maps" class="img-fluid">
         <div class="pointer-structure new-york">
-            <img src="../assets/img/h1-contact-rev-02.png" alt="pointer" class="pointer">
+            <img src="../../../assets/img/h1-contact-rev-02.png" alt="pointer" class="pointer">
             <div class="info-box">
                 <p class="title">New York Coaching</p>
                 <p class="more">Read More</p>
@@ -10,7 +10,7 @@
         </div>
 
         <div class="pointer-structure london">
-            <img src="../assets/img/h1-contact-rev-02.png" alt="pointer" class="pointer">
+            <img src="../../../assets/img/h1-contact-rev-02.png" alt="pointer" class="pointer">
             <div class="info-box">
                 <p class="title">London Coaching</p>
                 <p class="more">Read More</p>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="pointer-structure melbourne">
-            <img src="../assets/img/h1-contact-rev-02.png" alt="pointer" class="pointer">
+            <img src="../../../assets/img/h1-contact-rev-02.png" alt="pointer" class="pointer">
             <div class="info-box">
                 <p class="title">Melbourne Coaching</p>
                 <p class="more">Read More</p>

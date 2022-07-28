@@ -3,8 +3,8 @@
     <div>
         <div class="logos-container d-flex">
             <div class="logo" v-for="(logo, index) in sponsorLogos" :key="index" :class="{'text-center': index === 2, 'text-end': index > 2}">
-                <img :src="require(`../assets/img/${logo.visibleImg}`)" alt="logo" class="logo-in-sight">
-                <img :src="require(`../assets/img/${logo.hiddenImg}`)" alt="logo" class="hidden-logo">
+                <img :src="require(`../../../assets/img/${logo.visibleImg}`)" alt="logo" class="logo-in-sight">
+                <img :src="require(`../../../assets/img/${logo.hiddenImg}`)" alt="logo" class="hidden-logo">
             </div>
         </div>
     </div>
@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../../styles/variables.scss";
 section{
     padding: 80px 0;
 }

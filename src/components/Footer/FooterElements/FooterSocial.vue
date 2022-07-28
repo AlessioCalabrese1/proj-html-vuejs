@@ -29,14 +29,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 ul{
     list-style: none;
     padding: 0;
-    li{
-        
-    }
 }
 
 .title{

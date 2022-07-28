@@ -2,7 +2,7 @@
   <header class="py-5">
     <nav class="d-flex justify-content-between px-3">
         <div class="logo-container">
-            <img src="../assets/img/logo-img-01.png" alt="logo" class="img-fluid">
+            <img src="../../assets/img/logo-img-01.png" alt="logo" class="img-fluid">
         </div>
 
         <div>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../styles/variables.scss";
 
 header{
     position: fixed;

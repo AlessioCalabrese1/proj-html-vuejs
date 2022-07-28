@@ -50,10 +50,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 section{
-    background-image: url(../assets/img/h1-img-09.jpg);
+    background-image: url(../../../assets/img/h1-img-09.jpg);
     height: 1100px;
     display: flex;
     align-items: center;

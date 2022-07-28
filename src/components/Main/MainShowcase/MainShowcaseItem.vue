@@ -2,7 +2,7 @@
     <transition :name="direction">
         <div v-show="visibleItem === index" class="position-relative carousel_item">
             <div class="mainshowcase-slider">
-                <img :src="require(`../assets/img/${showcaseItem.imgInBackground}`)" alt="slider">
+                <img :src="require(`../../../assets/img/${showcaseItem.imgInBackground}`)" alt="slider">
             </div>
 
             <div class="mainshowcase-body">
@@ -77,7 +77,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 .mainshowcase-slider {
     height: 900px;

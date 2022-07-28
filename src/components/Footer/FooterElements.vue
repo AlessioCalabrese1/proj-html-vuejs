@@ -14,17 +14,17 @@
 </template>
 
 <script>
-import FooterAbout from './FooterAbout.vue';
-import FooterSocial from './FooterSocial.vue';
-import FooterLinks from './FooterLinks.vue';
-import FooterContact from './FooterContact.vue';
+import FooterAbout from './FooterElements/FooterAbout.vue';
+import FooterSocial from './FooterElements/FooterSocial.vue';
+import FooterLinks from './FooterElements/FooterLinks.vue';
+import FooterContact from './FooterElements/FooterContact.vue';
 export default {
     components: { FooterAbout, FooterSocial, FooterLinks, FooterContact }
 }
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../styles/variables.scss";
 
 section{
     background-color: $backgroundColorFooter;

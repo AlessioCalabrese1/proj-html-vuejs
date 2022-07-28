@@ -1,7 +1,7 @@
 <template>
     <div v-show="index === visibleItem" class="staff-container">
         <div class="showcase">
-            <img :src="require(`../assets/img/${worker.associatedImage}`)" alt="img" class="img-fluid">
+            <img :src="require(`../../../assets/img/${worker.associatedImage}`)" alt="img" class="img-fluid">
         </div>
 
         <div class="staff-info">
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 .staff-container{
         width: 70%;

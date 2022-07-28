@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img :src="require(`../assets/img/${testimonial.img}`)" alt="img" class="mb-3">
+    <img :src="require(`../../../assets/img/${testimonial.img}`)" alt="img" class="mb-3">
     <div class="name mb-3">
         {{ testimonial.name }}
     </div>
@@ -23,7 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 .name{
     color: white;

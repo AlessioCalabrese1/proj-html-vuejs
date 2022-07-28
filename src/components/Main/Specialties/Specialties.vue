@@ -6,7 +6,7 @@
     <div class="specialties-container">
         <div class="row">
             <div class="col-3 text-center" v-for="(specialtie, index) in specialties" :key="index">
-                <img :src="require(`../assets/svg/${specialtie.img}`)" alt="img">
+                <img :src="require(`../../../assets/svg/${specialtie.img}`)" alt="img">
                 <p class="title">{{ specialtie.title }}</p>
                 <p class="info">{{ specialtie.info }}</p>
             </div>
@@ -47,7 +47,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../styles/variables.scss";
+@import "../../../styles/variables.scss";
 
 section{
     width: $widthElement;
