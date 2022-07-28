@@ -46,7 +46,9 @@ ul{
 
 .title{
     color: white;
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Ibarra Real Nova', serif;
 }
 .line{
     width: 15%;

@@ -29,6 +29,7 @@ export default {
     color: white;
     font-weight: bold;
     font-size: 20px;
+    font-family: 'Ibarra Real Nova', serif;
 }
 
 .info{

@@ -1,7 +1,7 @@
 <template>
   <section class="position-relative">
     <div>
-        <h1 class="text-center">Latest News<span>.</span></h1>
+        <h1 class="text-center font">Latest News<span>.</span></h1>
         <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum, aperiam!</p>
         <div class="line mb-5"></div>
 
@@ -124,5 +124,11 @@ p.text-center{
     right: 20px;
     bottom: 50%;
     transform: translate(-50%, 0);
+}
+
+.font{
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: bold;
+    font-size: 50px;
 }
 </style>

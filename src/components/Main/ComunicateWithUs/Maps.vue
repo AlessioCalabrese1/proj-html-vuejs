@@ -61,7 +61,8 @@ export default {
 }
 .title{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
+    font-family: 'Ibarra Real Nova', serif;
 }
 .more{
     font-weight: bold;

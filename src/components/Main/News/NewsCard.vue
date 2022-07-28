@@ -43,7 +43,8 @@ img{
 
 .title {
     font-weight: bold;
-    font-size: 23px;
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
 }
 
 .info {

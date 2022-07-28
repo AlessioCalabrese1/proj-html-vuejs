@@ -75,7 +75,9 @@ section {
 
 h3 {
     padding: 25px 30px;
-    /*     box-shadow: 5px 15px 5px $backgroundColorMain; */
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .anchor{

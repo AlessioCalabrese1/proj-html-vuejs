@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 @import "../../../styles/variables.scss";
 
-.staff-container{
+    .staff-container{
         width: 70%;
         margin: 0 auto;
         display: flex;
@@ -83,5 +83,11 @@ export default {
     .fa-brands:hover{
         color: black;
         cursor: pointer;
+    }
+
+    h2{
+        font-family: 'Ibarra Real Nova', serif;
+        font-weight: bold;
+        font-size: 40px;
     }
 </style>

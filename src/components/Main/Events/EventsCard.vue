@@ -1,7 +1,7 @@
 <template>
     <div class="event-card d-flex">
         <div class="date text-center me-3">
-            <p>{{ event.day }}</p>
+            <p class="day">{{ event.day }}</p>
             <p class="month">{{ event.date }}</p>
         </div>
 
@@ -43,6 +43,9 @@ export default {
 .event-card:hover{
     background-color: white;
 }
+.event-card:hover .type{
+    color: $textColorHover;
+}
 
 .date {
     width: 60px;
@@ -53,6 +56,13 @@ export default {
         margin: 0;
         color: white;
     }
+
+    .day{
+        font-family: 'Ibarra Real Nova', serif;
+        font-weight: bold;
+        font-size: 16px;
+        margin-top: 5px;
+        }
 
     .month {
         font-size: 12px;
@@ -78,8 +88,9 @@ export default {
 
     .type {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 22px;
         color: black;
+        font-family: 'Ibarra Real Nova', serif;
     }
 
     .more {

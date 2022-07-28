@@ -45,7 +45,7 @@ export default {
 
 section{
     background-color: #181515;
-    padding: 80px 0;
+    padding: 150px 0;
     position: relative;
 }
 
@@ -65,10 +65,12 @@ section > div {
 .background-title{
     font-size: 300px;
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 50%;
     transform: translate(-50%, -25%);
     z-index: 1;
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: bold;
 }
 
 .testimonials-container {

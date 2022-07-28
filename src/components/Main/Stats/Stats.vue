@@ -75,9 +75,9 @@ section>div {
 }
 
 .title {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
-
+    font-family: 'Ibarra Real Nova', serif;
     span {
         color: $textColorHover;
     }
@@ -89,7 +89,7 @@ section>div {
 }
 
 .info {
-    font-size: 14px;
+    font-size: 16px;
     color: $textInfoColor;
 }
 
@@ -106,6 +106,11 @@ section>div {
         font-size: 20px;
         font-weight: bold;
     }
+}
+
+.argument > p{
+    font-family: 'Ibarra Real Nova', serif;
+    font-weight: bold;
 }
 
 .full-bar-mentorship {

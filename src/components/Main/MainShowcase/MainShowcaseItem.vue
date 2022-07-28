@@ -14,7 +14,7 @@
                         <div class="mainshowcase-title">
                             {{ showcaseItem.title }}<span>.</span>
                         </div>
-                        <div class="mainshowcase-info my-3">
+                        <div class="mainshowcase-info mb-3">
                             {{ showcaseItem.info }}
                         </div>
 
@@ -108,9 +108,9 @@ export default {
 }
 
 .mainshowcase-title {
-    font-size: 75px;
+    font-size: 90px;
     font-weight: bold;
-
+    font-family: 'Ibarra Real Nova', serif;
     span {
         color: $textColorHover;
     }
@@ -125,6 +125,10 @@ export default {
     background-color: white;
     border-radius: 0;
     padding: 15px;
+    border: 0;
+}
+
+button:hover .btn-text{
     border: 0;
 }
 

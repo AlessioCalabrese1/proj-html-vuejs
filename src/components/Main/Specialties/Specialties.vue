@@ -80,8 +80,10 @@ p{
 }
 .title{
     font-weight: bold;
+    font-size: 23px;
     color: black;
     padding-top: 15px;
+    font-family: 'Ibarra Real Nova', serif;
 }
 .info{
     font-weight: 300;
@@ -89,5 +91,10 @@ p{
 
 .anchor{
     bottom: -20px;
+}
+h1{
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 50px;
+    font-weight: bold;
 }
 </style>

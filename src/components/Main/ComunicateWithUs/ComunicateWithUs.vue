@@ -62,6 +62,7 @@ section > div{
 .title{
     font-size: 50px;
     font-weight: bold;
+    font-family: 'Ibarra Real Nova', serif;
     span{
         color: $textColorHover;
     }
@@ -106,6 +107,10 @@ section > div{
     i {
         color: white;
     }
+}
+
+button:hover .btn-text{
+    border: 0;
 }
 
 .anchor{
