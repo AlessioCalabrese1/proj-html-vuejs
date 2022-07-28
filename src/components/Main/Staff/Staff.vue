@@ -91,6 +91,7 @@ export default {
         width: 70%;
         margin: 0 auto;
         position: relative;
+        z-index: 4;
         top: -54px;
         left: 0;
         div{
