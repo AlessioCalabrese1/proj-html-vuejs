@@ -5,7 +5,7 @@
             <img src="../assets/img/h1-contact-rev-02.png" alt="pointer" class="pointer">
             <div class="info-box">
                 <p class="title">New York Coaching</p>
-                <p>Read More</p>
+                <p class="more">Read More</p>
             </div>
         </div>
 
