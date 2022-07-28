@@ -6,11 +6,11 @@
         :index = "index"
         :visibleItem="visibleItem"/>
         <div class="btn-container d-flex">
-            <div @click="goLeft()">
+            <div @click="goLeft()" class="hov">
                 <i class="fa-solid fa-arrow-left-long"></i>
             </div>
 
-            <div @click="goRight()">
+            <div @click="goRight()" class="hov">
                 <i class="fa-solid fa-arrow-right-long"></i>
             </div>
         </div>
@@ -58,6 +58,7 @@ export default {
         goRight(){
             if (this.visibleItem == this.workers.length-1) {
                 this.visibleItem = 0;
+                console.log(this.visibleItem)
             }else{
                 this.visibleItem++;
             }
@@ -100,5 +101,9 @@ export default {
 
     .anchor{
         bottom: 30px;
+    }
+
+    .hov:hover{
+        cursor: pointer;
     }
 </style>

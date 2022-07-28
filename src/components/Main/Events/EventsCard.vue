@@ -42,6 +42,7 @@ export default {
 }
 .event-card:hover{
     background-color: white;
+    cursor: pointer;
 }
 .event-card:hover .type{
     color: $textColorHover;

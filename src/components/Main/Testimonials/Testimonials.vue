@@ -3,7 +3,7 @@
         <div class="background-title">Testimonials.</div>
         <div class="structure">
             <div>
-                <i class="fa-solid fa-arrow-left-long" @click="goLeft()"></i>
+                <i class="fa-solid fa-arrow-left-long hov" @click="goLeft()"></i>
             </div>
 
             <div class="testimonials-container text-center">
@@ -15,7 +15,7 @@
             </div>
 
             <div>
-                <i class="fa-solid fa-arrow-right-long" @click="goRight()"></i>
+                <i class="fa-solid fa-arrow-right-long hov" @click="goRight()"></i>
             </div>
         </div>
 
@@ -115,5 +115,9 @@ i{
     right: 20px;
     bottom: 75%;
 
+}
+
+.hov:hover{
+    cursor: pointer;
 }
 </style>

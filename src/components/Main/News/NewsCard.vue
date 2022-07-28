@@ -1,5 +1,5 @@
 <template>
-    <div class="col-4 event-card">
+    <div class="col-4 event-card" v-show="index >= visibleItem && index <= (visibleItem+2)">
         <img :src="require(`../../../assets/img/${news.coverImage}`)" alt="img" class="img-fluid mb-3">
         <p class="date mb-1"><i class="fa-regular fa-clock pe-1"></i>{{ news.publicationDate }} <i class="fa-regular fa-user px-1"></i>{{
                 news.author
@@ -16,6 +16,14 @@ export default {
         news: {
             type: Object,
             require: true
+        },
+        index:{
+            type: Number,
+            require: true
+        },
+        visibleItem:{
+            type: Number,
+            require: true
         }
     }
 }
@@ -26,6 +34,9 @@ export default {
 
 .event-card {
     padding: 15px;
+}
+.event-card:hover {
+    cursor: pointer;
 }
 
 img{

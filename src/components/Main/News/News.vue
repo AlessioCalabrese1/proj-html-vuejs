@@ -7,19 +7,21 @@
 
         <div class="container-fluid d-flex justify-content-between align-items-center p-0">
             <div>
-                <i class="fa-solid fa-arrow-left-long"></i>
+                <i class="fa-solid fa-arrow-left-long hov" @click="goLeft()"></i>
             </div>
             
             <div class="events-list">
                 <div class="row">
                     <NewsCard v-for="(news, index) in newsList" 
                     :key="index"
-                    :news="news" />
+                    :news="news"
+                    :index="index"
+                    :visibleItem="visibleItem" />
                 </div>
             </div>
 
             <div>
-                <i class="fa-solid fa-arrow-right-long"></i>
+                <i class="fa-solid fa-arrow-right-long hov" @click="goRight()"></i>
             </div>
         </div>
     </div>
@@ -56,7 +58,49 @@ export default {
                     title: "Next Investment",
                     description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...",
                 },
-            ]
+                {
+                    coverImage: "h1-img-07.jpg",
+                    publicationDate: "May, 5 2019",
+                    author: "Test",
+                    title: "Next Investment",
+                    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...",
+                },
+                {
+                    coverImage: "h1-img-08.jpg",
+                    publicationDate: "May, 5 2019",
+                    author: "Test",
+                    title: "Next Investment",
+                    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...",
+                },
+                {
+                    coverImage: "h1-rev-img-01.jpg",
+                    publicationDate: "May, 5 2019",
+                    author: "Test",
+                    title: "Next Investment",
+                    description: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem non libero, deleniti...",
+                },
+            ],
+            visibleItem: 0,
+        }
+    },
+
+    methods: {
+        goRight(){
+            if (this.visibleItem == this.newsList.length-3) {
+                this.visibleItem = 0;
+                console.log(this.visibleItem);
+            }else{
+                this.visibleItem++;
+                console.log(this.visibleItem);
+            }
+        },
+
+        goLeft(){
+            if (this.visibleItem == 0) {
+                this.visibleItem = this.newsList.length-3;
+            }else{
+                this.visibleItem--;
+            }
         }
     },
 
@@ -94,41 +138,7 @@ p.text-center{
     width: 70%;
 }
 
-.event-card{
-    padding: 15px;
-}
-
-.date{
-    font-size: 12px;
-    color: $textInfoColor;
-    i{
-        color: $textColorHover;
-    }
-}
-
-.title{
-    font-weight: bold;
-    font-size: 23px;
-}
-.info{
-    color: $textInfoColor;
-    font-size: 14px;
-}
-.more{
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 12px;
-}
-
-.anchor{
-    right: 20px;
-    bottom: 50%;
-    transform: translate(-50%, 0);
-}
-
-.font{
-    font-family: 'Ibarra Real Nova', serif;
-    font-weight: bold;
-    font-size: 50px;
+.hov:hover{
+    cursor: pointer;
 }
 </style>
